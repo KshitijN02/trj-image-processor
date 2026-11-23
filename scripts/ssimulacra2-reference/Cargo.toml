@@ -1,0 +1,11 @@
+[package]
+name = "ssimulacra2-reference"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+# Reference scorer used only to validate src/core/ssimulacra2.ts.
+# Not part of the app or the normal test run. See README.md in this folder.
+[dependencies]
+ssimulacra2 = "=0.5.1"
+image = { version = "0.25", default-features = false, features = ["png"] }

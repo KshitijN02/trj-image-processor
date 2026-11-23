@@ -1,0 +1,8 @@
+# Netlify (also Cloudflare Pages): cross-origin isolation enables SharedArrayBuffer,
+# which the multi-threaded AVIF and oxipng codecs need.
+/*
+  Cross-Origin-Opener-Policy: same-origin
+  Cross-Origin-Embedder-Policy: require-corp
+
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
